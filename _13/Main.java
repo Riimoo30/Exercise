@@ -65,8 +65,8 @@ public class Main {
         menuPrices.add(4);
 
         System.out.println("The price of " + menuItems.get(0) + " is " + menuPrices.get(0));
-        System.out.println("The price of " + menuItems.get(1) + " is " + menuPrices.get(2));
-        System.out.println("The price of " + menuItems.get(2) + " is " + menuPrices.get(1));
+        System.out.println("The price of " + menuItems.get(1) + " is " + menuPrices.get(1));
+        System.out.println("The price of " + menuItems.get(2) + " is " + menuPrices.get(2));
 
     }
 
@@ -84,10 +84,12 @@ public class Main {
     public static void exercise3() {
         System.out.println("\nExercise 3:");
         int[] items = new int[]{5, 10404, -234348, -53, 9, 91, 92, 34534, 12334, 1435};
-
-        int sum = items[0] + items[1] + items[2] + items[3] + items[4] + items[5] + items[6] + items[7] + items[8] +
-                  items[9];
-
+        int sum = 0;
+        //int sum = items[0] + items[1] + items[2] + items[3] + items[4] + items[5] + items[6] + items[7] + items[8] +
+        //          items[9];
+        //Non ho usato un ciclo perchè sarebbero stati spiegati nella lezione successiva.
+        for(int num : items)
+            sum += num;
         System.out.println(sum);
     }
 }
