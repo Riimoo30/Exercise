@@ -74,10 +74,6 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        double myLunchPrice = 5.99;
-        String lunchType = "sandwich";
-        String description = "Nice big sandwich";
-        int weightInGrams = 500;
         lunch();
     }
     private static void lunch(){

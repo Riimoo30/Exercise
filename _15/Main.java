@@ -23,7 +23,7 @@ public class Main {
         double interestGainedThisYearEuros = 0;
 
         //while (currentInvestmentValueEuros <= 100_000) This will stop when reach 100_00
-        while(yearsPast <= 5 || currentInvestmentValueEuros <= 15_000){ //This will stop when reach 15_000 or 5 years
+        while(yearsPast <= 5 || currentInvestmentValueEuros == 15_000){ //This will stop when reach 15_000 or 5 years
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
@@ -59,7 +59,7 @@ public class Main {
         int remainingPoundsToSell = 10_000;
         int maxPoundsToSellPerDay = 1_000;
         //the loop continues until all pounds are sold
-       while(remainingPoundsToSell != 0) {
+       while(remainingPoundsToSell > 0) {
            poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
 
            //if the rate is larger than 1.15, sell 1000 pounds
@@ -81,7 +81,7 @@ public class Main {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:Do while
+     * A1:For each
      *
      * Q2: We have a list of 1000 users to send emails to
      * A2: For Each
@@ -90,6 +90,6 @@ public class Main {
      * A3: For i
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4: while
+     * A4: do while
      */
 }
