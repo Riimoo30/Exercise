@@ -74,16 +74,13 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        lunch();
+    lunch();
     }
     private static void lunch(){
         double myLunchPrice = 5.99;
-        System.out.println(myLunchPrice);
         String lunchType = "sandwich";
-        System.out.println(lunchType);
         String description = "Nice big sandwich";
-        System.out.println(description);
         int weightInGrams = 500;
-        System.out.println(weightInGrams);
+        System.out.println(myLunchPrice);
     }
 }

@@ -23,7 +23,7 @@ public class Main {
         double interestGainedThisYearEuros = 0;
 
         //while (currentInvestmentValueEuros <= 100_000) This will stop when reach 100_00
-        while(yearsPast <= 5 || currentInvestmentValueEuros == 15_000){ //This will stop when reach 15_000 or 5 years
+        while(yearsPast <= 5 || currentInvestmentValueEuros < 15_000){ //This will stop when reach 15_000 or 5 years
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
